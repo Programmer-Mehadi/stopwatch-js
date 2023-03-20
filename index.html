@@ -6,8 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stop Watch</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
   </head>
   <body>
+    <section id="stop_watch_container">
+      <div class="body" id="stopwatch_body">
+        <div class="header">
+          <i class="fa-solid fa-clock"></i>
+          <p class="title">Stopwatch</p>
+        </div>
+        <div class="content">
+          <div>
+            <span class="big_text">0</span>
+            <span class="small_text">h</span>
+          </div>
+          <div>
+            <span class="big_text">0</span>
+            <span class="small_text">m</span>
+          </div>
+          <div>
+            <span class="big_text">0</span>
+            <span class="small_text">s</span>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="btn_group">
+            <button class="start">Start</button>
+            <button class="reset">Reset</button>
+          </div>
+          <div class="full_screen_btn_group">
+            <i id="see_fullscreen" class="fa-solid fa-expand"></i>
+            <i id="exit_fullscreen" class="fa-solid fa-minimize"></i>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>
