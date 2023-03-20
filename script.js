@@ -2,6 +2,7 @@ const seeFullScreenBtn = document.getElementById('see_fullscreen');
 const exitFullScreenBtn = document.getElementById('exit_fullscreen');
 const startBtn = document.getElementById('start_btn');
 const resetBtn = document.getElementById('reset_btn');
+const pauseBtn = document.getElementById('pause_btn');
 const timeContent = document.getElementById('time_content');
 
 exitFullScreenBtn.style.display = 'none';
@@ -80,6 +81,9 @@ resetBtn.addEventListener('click', () => {
             <span class="small_text">s</span>
           </div>
     `
+})
+pauseBtn.addEventListener('click', () => {
+    clearInterval(timeTravel);
 })
 
     

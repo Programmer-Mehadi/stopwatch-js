@@ -7,6 +7,7 @@
   --red: #ff0032;
   --start: #4d455d;
   --white: #ffffff;
+  --green: #54b435;
   --header-color: #00425a;
   --body-color: #1f8a70;
   --footer-color: #bfdb38;
@@ -62,7 +63,7 @@
   background-color: var(--body-color);
 }
 #stop_watch_container .body .content .big_text {
-  font-size: 60px;
+  font-size: 80px;
 }
 #stop_watch_container .body .footer {
   padding: 15px;
@@ -83,14 +84,22 @@
   border-radius: 4px;
   cursor: pointer;
 }
-#stop_watch_container .body .footer .btn_group .reset {
+#stop_watch_container .body .footer .btn_group .pause {
   background-color: var(--red);
   color: var(--white);
   font-weight: 700;
   padding: 5px 20px;
   border: 0px;
   border-radius: 4px;
-  margin-left: 8px;
+  cursor: pointer;
+}
+#stop_watch_container .body .footer .btn_group .reset {
+  background-color: var(--green);
+  color: var(--white);
+  font-weight: 700;
+  padding: 5px 20px;
+  border: 0px;
+  border-radius: 4px;
   cursor: pointer;
 }
 #stop_watch_container .body .footer .full_screen_btn_group i {
